@@ -2,29 +2,24 @@
 using namespace std;
 #include "Box.h"
 
-int main() {
-  
-   // 1. Create a Box type object called box1
-  
-  
-   // ======= DO NOT CHANGE THE INPUT ===========
-   int height, length, width;
-   cout << "Enter the Height of the Box : ";
-   cin >> height;
-   cout << "Enter the Length of the Box : ";
-   cin >> length;
-   cout << "Enter the width of the Box : ";
-   cin >> width;
-   // ===========================================
-  
-   // 2. Use setters assign height, length, width throw
-  
-   // === DO NOT CHANGE THE OUTPUT =============
-   cout << "Box Height " << box1.getHeight() << endl;
-   cout << "Box Length " << box1.getLength() << endl;
-   cout << "Box Width " << box1.getWidth() << endl;
-   cout << "Volume of Box is " << box1.calcVolume() << endl;
-   // ==========================================
-      return 0;
-}
+int main() 
+{
+  Box b1;
+  int le,wi,he;
 
+  cout<<"Input the length : ";
+  cin>>le;
+  cout<<"Input the width : ";
+  cin>>wi;
+  cout<<"Input the height : ";
+  cin>>he;
+
+  b1.setLength(le);
+  b1.setWidth(wi);
+  b1.setHeight(he);
+
+  cout<<"The volume of the box : "<<b1.calcVolume()<<endl;
+
+  return 0;
+
+}
